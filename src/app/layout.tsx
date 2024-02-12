@@ -4,6 +4,7 @@ import "./globals.css";
 import Chat from "@/components/Chat";
 import { cn } from "@/lib/utils";
 import Providers from "@/components/Providers";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Chat />
           {children}
+          <Toaster />
         </body>
       </Providers>
     </html>
